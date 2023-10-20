@@ -194,12 +194,12 @@ export default function Home({ person, publicPerson }) {
       let value = Math.floor(Math.random() * 9)
       person = data[value];
       setData(person);
-    }, 2000); // Interval duration in milliseconds
+    }, 8000); // Interval duration in milliseconds
     
     const typed = new Typed(el.current, {
       strings: ["Women's", "Sweetest"],
-      typeSpeed: 50,
-      backSpeed: 40,
+      typeSpeed: 30,
+      backSpeed: 30,
       backDelay: 1500,
       loop: !0,
       showCursor: false,
@@ -320,7 +320,7 @@ export async function getServerSideProps({ params: { slug } }) {
   const data = [
     {
       id: 1,
-      name: "Ngọc Ánh",
+      name: "VCI - Woman",
       slug: "ngoc-anh",
       secret: "48ac4c",
       quote:
