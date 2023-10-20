@@ -117,7 +117,7 @@ export default function Home({ person, publicPerson }) {
       const data = [
         {
           id: 1,
-          name: "Ngọc Ánh",
+          name: "VCI Woman",
           slug: "ngoc-anh",
           secret: "48ac4c",
           quote:
