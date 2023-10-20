@@ -112,6 +112,7 @@ export default function Home({ person, publicPerson }) {
   }, []);
 
   useEffect(() => {
+    let value = 0;
     const interval = setInterval(() => {
       // Fetch or generate new data here
       const data = [
@@ -190,9 +191,15 @@ export default function Home({ person, publicPerson }) {
             "Wishing you a day that’s just like you… really special! Happy Woman’s Day!",
         }
       ];
-
-      let value = Math.floor(Math.random() * 9)
       person = data[value];
+      if (value == 8)
+      {
+        value = 0;
+      }
+      else{
+        value += 1;
+      }
+      //value = Math.floor(Math.random() * 9)
       setData(person);
     }, 8000); // Interval duration in milliseconds
     
